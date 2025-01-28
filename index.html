@@ -3,81 +3,250 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Content Strategy for Commercial Real Estate</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Content Strategy and Social Media Management">
+  <title>Social Media Strategy for Real Estate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Hero Section */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 60px 0;
+      background: linear-gradient(to right, #4CAF50, #81C784);
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      max-width: 50%;
+    }
+
+    .btn {
+      background: #ffffff;
+      color: #4CAF50;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .btn:hover {
+      background: #4CAF50;
+      color: white;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 40px 0;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #4CAF50;
+    }
+
+    section p {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    /* Contact Section */
+    .contact {
+      text-align: center;
+      padding: 40px 0;
+      background: #4CAF50;
+      color: white;
+    }
+
+    .contact form {
+      margin-top: 20px;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background: white;
+      color: #4CAF50;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.9rem;
+    }
+
+    /* AOS Animations */
+    [data-aos] {
+      opacity: 0;
+      transition-property: transform, opacity;
+      transition-duration: 0.6s;
+      transition-timing-function: ease-in-out;
+    }
+    [data-aos="fade-up"] {
+      transform: translateY(20px);
+    }
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
+  <!-- Hero Section -->
   <header>
     <div class="container">
-      <h1>Content Strategy for Commercial Real Estate</h1>
-      <p>Instagram Reels Strategy for Building Authority & Generating Leads</p>
+      <h1>Professional Social Media Strategy for Real Estate</h1>
+      <p>Boost your online presence with a tailored content strategy and consistent, high-quality posts.</p>
+      <a href="#strategy" class="btn">Learn More</a>
     </div>
+    <img src="https://via.placeholder.com/400" alt="Hero Image">
   </header>
 
-  <main class="container">
-    <section>
-      <h2>1. Showcase Expertise</h2>
-      <p><strong>Objective:</strong> Position yourself as a go-to authority in commercial real estate.</p>
-      <ul>
-        <li>“Insider Tips”: Share quick tips on finding the right commercial properties.</li>
-        <li>Market Updates: Explain current trends with engaging visuals.</li>
-        <li>Financial Tips: Simplify concepts like cap rate, NOI, or financing strategies.</li>
-      </ul>
-    </section>
+  <!-- Strategy Section -->
+  <section id="strategy" class="container">
+    <h2>Our Content Strategy</h2>
+    <p>Here’s how we plan to grow your brand:</p>
+    <div class="grid">
+      <div class="card" data-aos="fade-up">
+        <h3>Reels-First Approach</h3>
+        <p>We’ll focus on creating engaging Reels to capture attention quickly, leveraging Instagram’s algorithm for maximum reach.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Weekly Themes</h3>
+        <p>Each week will feature specific content themes to keep your audience engaged and entertained.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <h3>Platform Diversity</h3>
+        <p>From Instagram to LinkedIn, we’ll adapt your content to fit the tone and requirements of each platform.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="600">
+        <h3>Analytics-Based Adjustments</h3>
+        <p>Regularly analyze performance metrics to refine the strategy and maximize results.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>2. Client Success Stories</h2>
-      <p><strong>Objective:</strong> Build trust by showcasing real-life wins.</p>
-      <ul>
-        <li>Share a “Before and After” reel of a property improvement.</li>
-        <li>Highlight testimonials and success stories with visuals.</li>
-        <li>Walkthroughs of deals you’ve closed, showcasing key numbers.</li>
-      </ul>
-    </section>
+  <!-- Services Section -->
+  <section id="services" class="container">
+    <h2>What I’ll Do for You</h2>
+    <p>Here’s a breakdown of my deliverables:</p>
+    <div class="grid">
+      <div class="card" data-aos="fade-up">
+        <h3>5 Posts/Reels Per Week</h3>
+        <p>We’ll create 5 engaging pieces of content each week tailored to your audience.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Full Platform Coverage</h3>
+        <p>Manage content across Instagram, Facebook, LinkedIn, and TikTok.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <h3>Regular Updates</h3>
+        <p>Weekly progress reports to ensure you’re informed and satisfied with our direction.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>3. Property Showcases</h2>
-      <p><strong>Objective:</strong> Highlight your portfolio and attract leads.</p>
-      <ul>
-        <li>Film cinematic walkthroughs of available properties.</li>
-        <li>Showcase unique features with dynamic transitions.</li>
-        <li>Compare properties, asking the audience which they prefer.</li>
-      </ul>
-    </section>
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Let’s Build Your Brand</h2>
+    <p>Contact me today to get started on transforming your social media presence.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <section>
-      <h2>4. Educational Content</h2>
-      <p><strong>Objective:</strong> Teach your audience about commercial real estate investment.</p>
-      <ul>
-        <li>“Common Mistakes New Investors Make” using humor and information.</li>
-        <li>Explain leases (e.g., triple-net leases vs. gross leases).</li>
-        <li>Break down real estate vocabulary in simple terms.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>5. Day-in-the-Life Content</h2>
-      <p><strong>Objective:</strong> Humanize your brand and connect with your audience.</p>
-      <ul>
-        <li>Show behind-the-scenes footage of your workday.</li>
-        <li>“How I analyze a commercial property in 60 seconds.”</li>
-        <li>Highlight networking events and meetings.</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>6. Motivational & Personal Growth Content</h2>
-      <p><strong>Objective:</strong> Inspire aspiring investors and entrepreneurs.</p>
-      <ul>
-        <li>Share your journey and success story.</li>
-        <li>Use trending sounds to share motivational quotes.</li>
-        <li>Highlight tools, books, or mentors that have shaped your career.</li>
-      </ul>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Commercial Real Estate Strategy | Created with Care</p>
+    <p>&copy; 2025 Hussain Baig | Social Media Strategy</p>
   </footer>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
